@@ -11,8 +11,10 @@ var config = {
 
 firebase.initializeApp(config);
 
+//Connect to Firebase database
 var inquiry = firebase.database();
 
+//Gather form data on click
 $("#sendInfo").on("click",function(){
 	event.preventDefault();
 	var name = $("#inputName").val().trim();
@@ -25,6 +27,7 @@ $("#sendInfo").on("click",function(){
    		consult.push(this.value); 
 	});
 
+	// send form data to Firebase Database
 	var newInquiry = {
 		name: name,
 		phone: phone,
@@ -35,8 +38,10 @@ $("#sendInfo").on("click",function(){
 
 	inquiry.ref().push(newInquiry);
 
+	// alert user of successful submission and clear form
 	alert("Thank you for contacting me! I will attempt to reach out to you as soon as possible, usually within 24 hours.");
 
 	 window.location.reload();
 
 })
+
