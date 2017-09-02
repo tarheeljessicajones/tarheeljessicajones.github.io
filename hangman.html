@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WINE HANGMAN</title>
+  <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+  <!-- Added link to the jQuery library -->
+ 
+  <link rel="stylesheet" type="text/css" href="assets/css/hangman.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+  <div >
+    <h1>Hangman: Wine Edition</h1>
+    <p id= "instructions">Guess a type of wine below!</p>
+    <p id="rateField"></p>
+  </div>
+
+  <div>
+    <form name="form">
+      <input name="rateSize" type="text" size="20" maxlength="1" placeholder="Enter a Letter Here">
+      <input name="button" type="button" value="Guess" onClick="determineMatch()">
+
+      <p id="generateNewWord">Wrong Letter Guesses:</p>
+      <img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman"><br />
+      <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+    </form>
+    <p id="results"></p>
+  <div>
+
+  <script src="assets/javascript/hangman.js"></script>
+
+</body>
+</html>

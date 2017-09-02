@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+body {
+	background: url("../images/glass-wine-red-a-bottle-plug-black-background.jpg");
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	color: white;
+}
+input {
+	border: 2px solid #999;
+	font-family: Helvetica, sans-serif;
+	color: purple;
+}
+#instructions {
+	background: purple;
+	font-family: 'Permanent Marker', 'cursive';
+	color: white;
+}
+
+/*#generateNewWord, #results, #hangman, #guess, #typeIt, #newGame, #blanksSection {
+	margin-left: 300px;-
+	text-align: center;
+	
+}*/
+
+p {
+	font-family: 'Permanent Marker', 'cursive';
+	color: white;
+	font-size: 2.25em;
+}
+
+#blanksSection {
+	font-family: 'Permanent Marker', 'cursive';
+	color: white;
+	font-size: 2.0em;
+}
+
+h1 {
+	font-family: 'Permanent Marker', 'cursive';
+	color: white;
+}

@@ -1,0 +1,19 @@
+.jumbotron, #randomNumber, #yourScore {
+	background-color: pink;
+}
+
+#gamesWon, #alertScore {
+	background-color: yellow;
+}
+#crystal1, #crystal2, #crystal3, #crystal4 {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.jumbotron, h1 {
+	font-color: white;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Bungee Shade', cursive;
+}

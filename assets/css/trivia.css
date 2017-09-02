@@ -1,0 +1,16 @@
+body {
+	display: inline-block;
+	background-image: url("../images/background.jpg");
+}
+
+#main, form, .html {
+	display: inline-block;
+	text-align: center;
+	background-color: #ebebeb;
+	border: solid 5px black;
+	width: 50%;
+	font: #777;
+	padding: 50px;
+	margin-left: 25%;
+	margin-right: 25%;
+}

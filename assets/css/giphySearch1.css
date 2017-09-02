@@ -1,0 +1,14 @@
+.row, .container {
+	font-family: 'Rock Salt', cursive;
+	font-color: white;
+}
+
+.html {
+	font-color: white;
+	font-family: 'Rock Salt', cursive;
+}
+
+.navbar-header, h1, h3 {
+	color: white;
+	font-family: 'Rock Salt', cursive;
+}
