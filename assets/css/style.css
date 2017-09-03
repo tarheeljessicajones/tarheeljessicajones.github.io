@@ -1,0 +1,110 @@
+.jumbotron {
+    background-color: black;
+    color: white;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 24px;
+    text-align: center;
+}
+
+#traveling {
+  background-color: white;
+  font-color: black;
+  font-weight: bold;
+}
+
+
+.form-control {
+  font-color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+#text-center{
+    font-family: "Times";
+    font-size: 20px;
+}
+.container {
+  background-color: black;
+  font-color: white;
+}
+
+#currentLocation, #destin, #estimatedDistance, #estimatedTravelTime,#currentLocationOutput, #destinOutput, #estimatedDistanceOutput, #estimatedTravelTimeOutput{
+  color: white;
+  font-weight: bold;
+}
+
+h1{
+    padding: 20px;
+}
+
+.active{
+    margin-bottom: 5px;
+}
+.formGroup {
+  background-color: black;
+}
+#panelHeading {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 24px;
+   /* text-align: right;*/
+}
+
+.row {
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-color: white;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+}
+
+td, th, tr {
+	clear: both;
+	height: 100%;
+	border: 2px;
+	padding: 2px;
+	width: 25%;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+.url {
+	width: 200px;
+	height: 200px;
+}
+
+body {
+	background-image: url('../images/places.jpg');
+	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+}
+/*@media screen and (max-width: 980px){
+  body{
+    background-color: orange;
+  }
+}
+@media screen and (max-width: 768px){
+  body {
+  background-color: purple;
+}
+  
+}
+@media screen and (max-width: 640px){
+    body{
+        background-color: yellow;
+    }
+}*/
