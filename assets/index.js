@@ -44,4 +44,3 @@ $("#sendInfo").on("click",function(){
 	 window.location.reload();
 
 })
-

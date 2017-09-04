@@ -38,10 +38,9 @@
 		<h1 class="text-center"><strong>Explore North America</strong></h1>
 		<p> How far away is your destination? What deals does it have to offer?</p>
 		<ul class="nav nav-pills">
-  			<li role="presentation"><a href="loginSNA.html">Sign In</a></li>
-  			<li role="presentation" class="active"><a href="indexSNA.html">Search</a></li>
-  			<!-- <li role="presentation"><a href="#">Saved Destinations</a></li>
-  			<li role="presentation"><a href="#">Favorite Deals</a></li> -->
+  			<li role="presentation"><a href="indexSNA.html">Sign Out</a></li>
+  			<li role="presentation" class="active"><a href="userSNA.html">Search</a></li>
+  			<li role="presentation"><a href="tripsSNA.html">Saved Trips</a></li>
 		</ul>
 	</div>
 	
@@ -100,7 +99,7 @@
             <div id="currentLocation" class="col-md-2" id="traveling"><h3>Current Location</h3></div>
             <div id="destin" class="col-md-2" id="traveling"><h3>Destination</h3></div>
             <div id="estimatedDistance" class="col-md-4" id="traveling"><h3>Estimated Distance</h3></div>
-            <div id="estimatedTravelTime" class="col-md-4" id="traveling"><h3>Estimated Driving Time (in Hr:min:sec)</h3></div>
+            <div id="estimatedTravelTime" class="col-md-4" id="traveling"><h3>Estimated Driving Time (Hr:min:sec)</h3></div>
         </div>
         <div class="row">
             <hr>
@@ -112,6 +111,9 @@
             <div id="estimatedTravelTimeOutput" class="col-md-4"></div>
         </div>
         <br>
+        <div class="row" id="saveRow">
+            <button type="submit" class="button" id="saveTrip">Save Trip</button>
+        </div>
     </div>
     <br>
 
@@ -142,11 +144,12 @@
 				<div id="pan22" class="panel panel-primary">
 <!-- 					<div class="panel-heading">Results</div> -->
 					<div class="panel-body" id="dealsResults"><h3><strong> Deal Results</strong></h3>
-						<table id="dealsTable"><h4></h4></table>
+						<table id="dealsTable"><h4></h4>
 							<thead>
 							</thead>
 							<tbody>
 							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>

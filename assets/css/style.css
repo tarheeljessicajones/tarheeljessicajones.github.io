@@ -92,19 +92,40 @@ body {
   	background-position: center;
   	background-attachment: fixed;
 }
-/*@media screen and (max-width: 980px){
-  body{
-    background-color: orange;
-  }
+
+.data-search {
+
 }
-@media screen and (max-width: 768px){
-  body {
-  background-color: purple;
+
+#travelInfo {
+  padding: 25px;
 }
-  
+
+h3{
+  font-family: 'Calligraffitti', cursive;
 }
-@media screen and (max-width: 640px){
-    body{
-        background-color: yellow;
-    }
-}*/
+
+#dealsTable {
+  padding: 100px;
+  border-top: 10px;
+  border-color: black;
+  width: 100%;
+}
+
+td{
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: green
+  font-color: white;
+}
+
+
+#saveRow {
+  padding-bottom: 20px;
+}
+
+#tripsTable td{
+  padding: 0;
+  text-align: left;
+}
