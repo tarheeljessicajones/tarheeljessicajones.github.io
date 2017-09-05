@@ -1,42 +1,71 @@
-@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
-
 body {
-	background: url("../images/glass-wine-red-a-bottle-plug-black-background.jpg");
-	background-repeat: no-repeat;
-	text-align: center;
-	font-family: Helvetica, sans-serif;
-	color: white;
+  background-image: url('../images/belly.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
+
+#userInput {
+  background-color: black;
+  color: white;
+}
+
 input {
-	border: 2px solid #999;
-	font-family: Helvetica, sans-serif;
-	color: purple;
-}
-#instructions {
-	background: purple;
-	font-family: 'Permanent Marker', 'cursive';
-	color: white;
-}
-
-/*#generateNewWord, #results, #hangman, #guess, #typeIt, #newGame, #blanksSection {
-	margin-left: 300px;-
-	text-align: center;
-	
-}*/
-
-p {
-	font-family: 'Permanent Marker', 'cursive';
-	color: white;
-	font-size: 2.25em;
+  background-color: #FF1111;
+  font-color: white;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border: 2px;
+  border-radius: 25px;
+  width: auto;
+  font-family: 'Euphoria Script', cursive;
 }
 
-#blanksSection {
-	font-family: 'Permanent Marker', 'cursive';
-	color: white;
-	font-size: 2.0em;
+#landingPage {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+  color: #FF1111;
+  font-size: 35px;
+  text-align: right;
+  width: 300px;
+  font-family: 'Euphoria Script', cursive;
 }
 
-h1 {
-	font-family: 'Permanent Marker', 'cursive';
-	color: white;
+#hangmanPage {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+  color: #FF1111;
+  font-size: 35px;
+  text-align: right;
+  font-family: 'Euphoria Script', cursive;
+}
+
+h1{
+  font-size: 75px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 40px;
+}
+
+p{
+  font-size: 30px;
 }

@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WINE HANGMAN</title>
-  <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
-  <!-- Added link to the jQuery library -->
-   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <title>Baby Shower Hangman</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/hangman.css">
-
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ <!--  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids|Euphoria+Script|Princess+Sofia|Sail" rel="stylesheet">
 </head>
 
-<body>
-  <div >
-    <h1>Hangman: Wine Edition</h1>
-    <p id= "instructions">Guess a type of wine below!</p>
-    <p id="rateField"></p>
+<body id="hangmanPage">
+  <!-- game container -->
+  <div class="container">
+    <h2>Baby Shower Hangman</h2>
+    <br>
+    <div class="row">
+      <p id="wrongGuesses">Wrong Guesses Left: 6</p>
+      <p>Wrong Letters Guessed: </p>
+      <div id="wrongLetters"></div>
+      <img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman">
+    </div>
+    <!-- section where blanks will be appended -->
+    <div class="row" id="blanks">
+    </div>
+    <!-- user input and game buttons -->
+    <div class="row">
+        <br>
+        <form name="form">
+            <input id="userInput" name="userInput" type="text" size="16" maxlength="1" placeholder="Enter a Letter Here">
+            <input id="guess" name="button" type="button" value="Guess" onClick="determineMatch()"><br>
+            <br>
+            <input id="newGame" name="refresh" type="button" value="New Word" onClick="location.reload()">
+          </form>
+    </div>
   </div>
 
-  <div>
-    <form name="form">
-      <input name="rateSize" type="text" size="20" maxlength="1" placeholder="Enter a Letter Here">
-      <input name="button" type="button" value="Guess" onClick="determineMatch()">
-
-      <p id="generateNewWord">Wrong Letter Guesses:</p>
-      <img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman"><br />
-      <input name="refresh" type="button" value="New Game" onClick="location.reload()">
-    </form>
-    <p id="results"></p>
-  <div>
 
   <script src="assets/javascript/hangman.js"></script>
 
