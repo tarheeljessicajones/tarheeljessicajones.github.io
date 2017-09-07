@@ -1,19 +1,148 @@
-.jumbotron, #randomNumber, #yourScore {
-	background-color: pink;
+body {
+	background-color: white;
+	position: absolute;
+  	top: 35%;
+  	left: 0;
+  	right: 0;
+  	
 }
 
-#gamesWon, #alertScore {
-	background-color: yellow;
-}
-#crystal1, #crystal2, #crystal3, #crystal4 {
-	max-height: 100%;
-	max-width: 100%;
+.navbar{
+	height: 150px;
+	background: black;
 }
 
-.jumbotron, h1 {
-	font-color: white;
+
+footer {
+	position: fixed; 
+	height: 25px; 
+	width: 100%; 
+	bottom: 0; 
+	background: black;
 	color: white;
-	font-weight: bold;
+}
+
+
+
+.jumbotron {
+	margin-top: 50px;
+	background-color: black;
+}
+
+#instructions {
+	background-color: linear-gradient(white, black) black;
+	padding: 0;
+	border: 0;
+	margin-bottom: 25px;
+	margin-left: 25px;
+}
+
+
+.card {
+	background-color: white;
+	background: white;
+	border: white;
+	width: 20%;
+	height: 100%;
+}
+
+.card-img-top{
+	height: 150px;
+	width: 75%;
+	padding-top: 25px;
+	margin-top: 25px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+.tools{
+	height: 15px;
+	width: 15px;
+}
+
+.tools-nav {
+	position: fixed;
+	height: 60px;
+	width: 60px;
+	left: 10px;
+	top: 30px;
+}
+
+li {
+	padding: 5px;
+	background-color: white;
+}
+
+.game {
+ 	background-color: white;
+ 	padding: 10px;
+ 	padding-bottom: 5px;
+ 	margin-left: 10px;
+ 	width: 18%;
+ 	height: 100%;
+ 	padding-right: 0;
+}
+
+.topScores {
+	background-color: white;
+ 	padding: 0;
+ 	border: 0;
+ 	margin: 0;
+ 	width: auto;
+ 	height: 125px;
+ 	color: black;
+ 	font-color: black;
+ 	position: fixed;
+ 	top: 5px;
+ 	right: 10px;
+}
+
+.row {
+	margin-right: 0;
+	padding-left: 15px;
+	background-color: white;
+}
+#scores {
+ 	background-color: white;
+ 	padding: 20px;
+ 	width: 20%;
+}
+
+#list {
+ 	padding-top: 0;
+ 	position: center;
+ 	height: auto;
+ }
+
+ h1, h2, h3{
+ 	font-size: 50px;
+ 	text-align: center;
+ 	font-color: black;
+ 	color: black;
+ }
+
+h1{
+	font-size: 50px;
 	text-align: center;
+	position: fixed;
+	top: 40px;
+	right: 20%;
+	color: white;
 	font-family: 'Bungee Shade', cursive;
 }
+
+
+ h2 {
+ 	font-size: 30px;
+ }
+
+ h3 {
+ 	font-size: 24px;
+ }
+ .card-group{
+ 	padding: 0;
+ 	margin: 0;
+ 	border: 0;
+ }
