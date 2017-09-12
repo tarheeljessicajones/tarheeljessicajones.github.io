@@ -2,99 +2,102 @@
 
 <html lang="en-us">
 
-	<head>
-  		<meta charset="UTF-8">
+  <head>
+      <meta charset="UTF-8">
   
-  		<title>Trivia Game</title>
-  		<!-- Reset file -->
-  		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  		<!-- Style Sheet -->
- 	 	<link rel="stylesheet" type="text/css" href="assets/css/trivia.css">
-   		<!-- Bootstrap File -->
-  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  		<!-- JQuery -->
-  		<script src="https://code.jquery.com/jquery.js"></script> 
-  		  
-	</head>
+      <title>Trivia Game</title>
+      <!-- Reset file -->
+      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+      <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/trivia.css">
+      <!-- Bootstrap File -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery.js"></script> 
+      <link href="https://fonts.googleapis.com/css?family=Graduate|Special+Elite" rel="stylesheet">
+        
+  </head>
 
-	<body>
+  <body>
 
-		<div id="main" class="container">
-			<div id="title" class="row">
-				<h1><strong>UNC TAR HEELS TRIVIA GAME</strong></h1>
-			</div>
-			<div id="instructions" class="row">
-					<p>Test your UNC Chapel Hill knowledge with this trivia game. Once you press the ‘Begin’ button, you will be given 60 seconds to answer trivia questions about the University of North Carolina at Chapel Hill. At the end of the 60 seconds, you will be notified of how many questions you answered correctly, and the game will end. If you finish early, hit the 'Submit' button and the game will end immediately. Good luck!
-					</p>
-				<button id="begin">Begin</button>
-			</div>
-		</div>
+    <div id="main" class="container">
+      <div id="title" class="jumbotron">
+        <h1><strong>UNC TAR HEELS TRIVIA GAME</strong></h1>
+      </div>
+      <div id="instructions" class="row">
+          <p>Test your UNC Chapel Hill knowledge with this trivia game. Once you press the ‘Begin’ button, you will be given 60 seconds to answer trivia questions about the University of North Carolina at Chapel Hill. At the end of the 60 seconds, you will be notified of how many questions you answered correctly, and the game will end. If you finish early, hit the 'Submit' button and the game will end immediately. Good luck!
+          </p>
+          
+        <button id="begin">Begin</button> 
+        <br>
+      </div>
+    </div>
 
-		<form action="" method="POST">
-			<div class="row">
-				<div id="timeRemaining">Time Remaining
-				<br>
-				<br>
-				</div>
-			</div>
-			<div>
-			<label>Question #1: UNC Chapel Hill was the first state public university in the United States of America.
-      				</label>
-      					<br>
-       				 	<input type="radio" aria-label="..." name="one" id="1" value="1"> True
-       				 	<input type="radio" aria-label="..." name="one" id="2" value="2"> False
-       				 	<br>
-      		<label>Question #2: Carolina’s official colors are light blue, navy blue, and white.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="two" id="12" value="12"> True
-        				<input type="radio" aria-label="..." name="two" id="11" value="11"> False
-        				<br>
-      		<label>Question #3: UNC Chapel Hill’s official mascot is a Tar Heel.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="three" id="22" value="22"> True
-        				<input type="radio" aria-label="..." name="three" id="21" value="21"> False
-  						<br>
-      		<label>Question #4: UNC Chapel Hill offers over 100 bachelor’s degree programs to choose from.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="four" id="32" value="32"> True
-        				<input type="radio" aria-label="..." name="four" id="31" value="31"> False
-  						<br>
-      		<label>Question #5: The most well-known and popular Chapel Hill, NC street that runs through UNC’s campus is Franklin Street.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="five" id="41" value="41"> True
-        				<input type="radio" aria-label="..." name="five" id="42" value="42"> False
-  						<br>
-      		<label>Question #6: The famous actor, Michael B. Jordan, is a Carolina graduate.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="six" id="52" value="52"> True
-        				<input type="radio" aria-label="..." name="six" id="51" value="51"> False
-  						<br>
-      		<label>Question #7: The Carolina Tar Heels have won more than 40 NCAA Division I team national championships.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="seven" id="61" value="61"> True
-        				<input type="radio" aria-label="..." name="seven" id="62" value="62"> False
-        				<br>
-      		<label>Question #8: UNC Chapel Hill’s most well-known rival is the NC State Wolfpack.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="eight" id="72" value="72"> True
-        				<input type="radio" aria-label="..." name="eight" id="71" value="71"> False
-        				<br>
-      		<label>Question #9: UNC Chapel Hill is located in the state’s capitol.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="nine" id="82" value="82"> True
-        				<input type="radio" aria-label="..." name="nine" id="81" value="81"> False
-        				<br>
-      		<label>Question #10: Carolina’s first student was Hinton James.</label>
-      					<br>
-        				<input type="radio" aria-label="..." name="ten" id="91" value="91"> True
-        				<input type="radio" aria-label="..." name="ten" id="92" value="92"> False
-        				<br>
-        				<br>
-        	</div>
-        	<div>
-        		<input id="submitButton" type="submit">
-        	</div>
- 		</form>
-		<script type="text/javascript" src="assets/javascript/trivia.js"></script>
-	</body>
+    <form action="" method="POST">
+      <div class="row">
+        <div id="timeRemaining">Time Remaining
+        <br>
+        <br>
+        </div>
+      </div>
+      <div>
+      <label>Question #1: UNC Chapel Hill was the first state public university in the United States of America.
+              </label>
+                <br>
+                <input type="radio" aria-label="..." name="one" id="1" value="1"> True
+                <input type="radio" aria-label="..." name="one" id="2" value="2"> False
+                <br>
+          <label>Question #2: Carolina’s official colors are light blue, navy blue, and white.</label>
+                <br>
+                <input type="radio" aria-label="..." name="two" id="12" value="12"> True
+                <input type="radio" aria-label="..." name="two" id="11" value="11"> False
+                <br>
+          <label>Question #3: UNC Chapel Hill’s official mascot is a Tar Heel.</label>
+                <br>
+                <input type="radio" aria-label="..." name="three" id="22" value="22"> True
+                <input type="radio" aria-label="..." name="three" id="21" value="21"> False
+              <br>
+          <label>Question #4: UNC Chapel Hill offers over 100 bachelor’s degree programs to choose from.</label>
+                <br>
+                <input type="radio" aria-label="..." name="four" id="32" value="32"> True
+                <input type="radio" aria-label="..." name="four" id="31" value="31"> False
+              <br>
+          <label>Question #5: The most well-known and popular Chapel Hill, NC street that runs through UNC’s campus is Franklin Street.</label>
+                <br>
+                <input type="radio" aria-label="..." name="five" id="41" value="41"> True
+                <input type="radio" aria-label="..." name="five" id="42" value="42"> False
+              <br>
+          <label>Question #6: The famous actor, Michael B. Jordan, is a Carolina graduate.</label>
+                <br>
+                <input type="radio" aria-label="..." name="six" id="52" value="52"> True
+                <input type="radio" aria-label="..." name="six" id="51" value="51"> False
+              <br>
+          <label>Question #7: The Carolina Tar Heels have won more than 40 NCAA Division I team national championships.</label>
+                <br>
+                <input type="radio" aria-label="..." name="seven" id="61" value="61"> True
+                <input type="radio" aria-label="..." name="seven" id="62" value="62"> False
+                <br>
+          <label>Question #8: UNC Chapel Hill’s most well-known rival is the NC State Wolfpack.</label>
+                <br>
+                <input type="radio" aria-label="..." name="eight" id="72" value="72"> True
+                <input type="radio" aria-label="..." name="eight" id="71" value="71"> False
+                <br>
+          <label>Question #9: UNC Chapel Hill is located in the state’s capitol.</label>
+                <br>
+                <input type="radio" aria-label="..." name="nine" id="82" value="82"> True
+                <input type="radio" aria-label="..." name="nine" id="81" value="81"> False
+                <br>
+          <label>Question #10: Carolina’s first student was Hinton James.</label>
+                <br>
+                <input type="radio" aria-label="..." name="ten" id="91" value="91"> True
+                <input type="radio" aria-label="..." name="ten" id="92" value="92"> False
+                <br>
+                <br>
+          </div>
+          <div>
+            <input id="submitButton" type="submit">
+          </div>
+    </form>
+    <script type="text/javascript" src="assets/javascript/trivia.js"></script>
+  </body>
 </html>

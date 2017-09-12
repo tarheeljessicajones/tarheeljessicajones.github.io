@@ -1,4 +1,6 @@
-function initialize() {
+	//initialize the new game
+	function initialize() {
+			//declare variables
 			var count;
 			var counter;
 			var answer = 0;
@@ -6,10 +8,11 @@ function initialize() {
 			var incorrect = 0;
 			var question1;
 
+			//game starts once you click the begin button
 			$("#begin").on("click", show);
 			$("#begin").on("click", start);
 
-			
+			//60 second timer countdown begins. once interval is clear, alert user of their score and and stop the timer countdown
 			function decrement() {
   				count--;
   				$("#timeRemaining").html("Time Remaining: " + count + " seconds");
@@ -28,6 +31,8 @@ function initialize() {
 					stop();
 				};
   			}
+
+  			//oncce all answers have been submitted (instead of waiting on interval to clear), check them against correct answers
 			function submit() {
 					function checkAnswers() {
 					$("#1").on("click",right);
@@ -52,28 +57,35 @@ function initialize() {
 					$("#92").on("click",wrong);
 					};
 
+					//alert user of their score
 					function score2 () {
 					$("form").html("<h1>Game over!</h1> You answered " + correct + " questions correctly and " + incorrect + " questions incorrectly.");
 					};
 					score2();
 			};
 
+			//for each right answer add a point to the score
 			function right() {
 				correct ++;
 			}
-
+			
+			//for each wrong answer subtract a point from the score
 			function wrong() {
 				incorrect ++;
 			}
 
+			//show game
 			function show() {
 				$("form").show();
 			}
 
+			//hide instructions
 			function hide() {
-				$("#instructions").hide();
+				$("#main").hide();
 			}
 
+			//start the game by hiding the instructions, setting the count intervval to
+			// 60 seconds, and running the check answers function after interval clears
 			function start() {
 				hide();
 		 		count = 60;
@@ -105,7 +117,7 @@ function initialize() {
 		}
 }
 
-		
+		//once page loads, hide the game section and initialize the new game function
 		$(document).ready(function() {
 			$("form").hide();
 			initialize();	

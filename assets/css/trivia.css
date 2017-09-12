@@ -1,16 +1,51 @@
-body {
-	display: inline-block;
-	background-image: url("../images/background.jpg");
-}
-
-#main, form, .html {
+#main, form {
 	display: inline-block;
 	text-align: center;
 	background-color: #ebebeb;
 	border: solid 5px black;
+	position: absolute;
+	top: 5%;
+	left: 25%;
 	width: 50%;
 	font: #777;
 	padding: 50px;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: 20px;
+	font-family: 'Special Elite', cursive;
+/*	font-family: 'Graduate', cursive;*/
+	background-color: white;
+	/*font-weight: bold;*/
+	font-size: 20px;
+	color: #99badd;
+	border: 0;
 }
+
+#main {
+	top: 10%;
+
+}
+
+p {
+	font-weight: bold;
+}
+ form {
+ 	opacity: 1.0;
+ }
+
+
+html {
+	background-image: url("../images/background.jpg");
+	background-attachment: fixed;
+ 
+  	left: 0;
+  	right: 0;
+  	min-height: 100%;
+  	width: 100%;
+}
+
+#begin, #submitButton {
+	background-color: #99badd;
+	color: white;
+	font-color: white;
+	font-weight: bold;
+	font-size: 16px;
+	}
