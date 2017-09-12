@@ -39,5 +39,81 @@
                 $("#gamesWon").html("Games Won: " + wins);
                 $("#gamesLost").html("Games Lost: " + losses);
                 alert("SORRY, BUT YOU LOST!");
-        };
+        }
       });
+
+
+      //display crystal value and add value to total score
+      $("#crystal2").on("click", function() {
+        $("#crystal2Value").html("Value: " + crystal2);
+         //as long as the score is less than or equal to the game random number, update score
+         if (score <= randomNumber) {
+           var scoreUpdate = score += crystal2;
+            $("#alertScore").html("Current Score: "+ scoreUpdate);
+         }
+         //once the score equals the game random number, stop game and alert user he/she won
+         if (score == randomNumber) {
+            wins ++;
+            $("#gamesWon").html("Games Won: " + wins);
+            $("#gamesLost").html("Games Lost: " + losses);
+            alert("YOU WON!");
+          }
+       //once the score exceeds the game random number, stop game and alert user he/she lost
+        else if (score > randomNumber) {
+                losses ++;
+                $("#gamesWon").html("Games Won: " + wins);
+                $("#gamesLost").html("Games Lost: " + losses);
+                alert("SORRY, BUT YOU LOST!");
+          }
+      });
+
+
+      //display crystal value and add value to total score
+      $("#crystal3").on("click", function() {
+        $("#crystal3Value").html("Value: " + crystal3);
+        //as long as the score is less than or equal to the game random number, update score
+        if (score <= randomNumber) {
+            var scoreUpdate = score += crystal3;
+            $("#alertScore").html("Current Score: "+ scoreUpdate);
+        }
+        //once the score equals the game random number, stop game and alert user he/she won
+        if (score == randomNumber) {
+            wins ++;
+            $("#gamesWon").html("Games Won: " + wins);
+                $("#gamesLost").html("Games Lost: " + losses);
+            alert("YOU WON!");
+        }
+        //once the score exceeds the game random number, stop game and alert user he/she lost
+        else if (score > randomNumber) {
+                losses ++;
+                $("#gamesWon").html("Games Won: " + wins);
+                $("#gamesLost").html("Games Lost: " + losses);
+                alert("SORRY, BUT YOU LOST!");
+        }
+      });
+
+
+      //display crystal value and add value to total score
+      $("#crystal4").on("click", function() {
+        $("#crystal4Value").html("Value: " + crystal4);
+        //as long as the score is less than or equal to the game random number, update score
+        if (score <= randomNumber) {
+            var scoreUpdate = score += crystal4;
+            $("#alertScore").html("Current Score: "+ scoreUpdate);
+        }
+        //once the score equals the game random number, stop game and alert user he/she won
+        if (score == randomNumber) {
+            wins ++;
+            $("#gamesWon").html("Games Won: " + wins);
+                $("#gamesLost").html("Games Lost: " + losses);
+            alert("YOU WON!");
+        }
+        //once the score exceeds the game random number, stop game and alert user he/she lost
+        else if (score > randomNumber) {
+                losses ++;
+               $("#gamesWon").html("Games Won: " + wins);
+                $("#gamesLost").html("Games Lost: " + losses);
+                alert("SORRY, BUT YOU LOST!");
+        }
+      });
+ })
