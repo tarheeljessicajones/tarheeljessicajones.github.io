@@ -1,16 +1,22 @@
-body {
+html {
   background-image: url('../images/belly.jpg');
   background-size: cover;
+ /* background-repeat: no-repeat;*/
   background-position: center;
   background-attachment: fixed;
-  position: absolute;
-  top: 50%;
-  right: 25%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  width: 100%;
 }
 
 #userInput {
+  background-color: black;
+  color: white;
+}
+
+
+#newGame {
   background-color: black;
   color: white;
 }
@@ -29,30 +35,26 @@ input {
 
 #landingPage {
   position: absolute;
-  top: 50%;
-  left: 80%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%); 
+  top: 25%;
+  margin-left: 65%;
   color: #FF1111;
   font-size: 35px;
-  text-align: right;
+  text-align: center;
   width: 300px;
   font-family: 'Euphoria Script', cursive;
 }
 
 #hangmanPage {
   position: absolute;
-  top: 50%;
-  left: 60%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%); 
+  top: 15%;
+  margin-left: 65%;
   color: #FF1111;
-  font-size: 35px;
-  text-align: right;
+  font-size: 30px;
+  text-align: center;
   font-family: 'Euphoria Script', cursive;
 }
 
-h1{
+h1 {
   font-size: 75px;
   font-weight: bold;
 }
@@ -62,10 +64,10 @@ h2 {
   font-weight: bold;
 }
 
-h4{
+h4 {
   font-size: 40px;
 }
 
-p{
+p {
   font-size: 30px;
 }
