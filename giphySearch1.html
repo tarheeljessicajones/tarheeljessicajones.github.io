@@ -14,38 +14,59 @@
       <script src="https://code.jquery.com/jquery.js"></script> 
       <style type="text/css"></style>
       <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo" rel="stylesheet">
     
 </head>
 
 <body>
-	<nav class="navbar navbar-inverse">
-  		<div class="container-fluid">
-    		<div class="navbar-header"><h1><strong> College Majors: </strong></h1>
+  		<div class="container-fluid" id="title">
+    		<h1><strong> College Majors: </strong></h1> 
         <h3>Go From Undeclared to BS in a Giphy</h3>
-        <p class="navbar-text navbar-right">#UndecidedIsNotAMajor   #PreAnythingIsNotaMajor   #SingleAndMarriedtoSallieMaeAtTheSameDamnTime  #MRSdegreeDoesNotExist #PimpologyIsNotAnAcademicDiscipline   #You're(NotYour)Welcome,EnglishMajors   #UndergradIsALifestyle   #YouReallyShouldStopProcrastinating   #SeriouslyBroItsDueTomorrow   #Fuggit   #TheresAlwaysNextSemester... </p>
-    		</div>
     	</div>
-	</nav>
 
-  	<div class="container">
-    	<div class="row">
-      		<div id="top" class="col-md-9">
-    	</div>
-    	
-    	<div class= "row">
-    		<div id="outcome" class="col-md-9">
-    		</div>
-    		<div id="user-input" class="col-md-3">
-				<form id="gif-form">
-      				<label for="major-input">Add a Major</label>
-      				<br>
-      				<input type="text" id="major-input">
-					<!-- Button triggers new movie to be added -->
-      				<input id="add-major" type="submit" value="Submit">
-    			</form>
-    		</div>
-    	</div>
+  <div class="container-fluid" id="description">
+    <h1><strong>Search gifs related to your college major!</strong></h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-md-4" id="seniorAdvice"><h2><strong>Senior Advice</strong></h2>
+        <p>#UndecidedIsNotAMajor</p>
+        <p>#PreAnythingIsNotaMajor</p>
+        <p>#SingleAndMarriedtoSallieMaeAtTheSameTime</p>
+        <p>#MrsDegreeDoesNotExist</p>
+        <p>#PimpologyIsNotAnAcademicDiscipline</p>
+        <p>#YourWelcomeEnglishMajorsHaHaHa</p>
+        <p>#UndergradIsALifestyle</p>
+        <p>#YouReallyShouldStopProcrastinating</p>
+        <p>#SeriouslyBroItsDueTomorrow</p>
+        <p>#Fuggit</p>
+        <p>#TheresAlwaysNextSemester...</p>
+      </div>
+      
+      <div class="col-md-4" id="outcome"><img src="assets/images/college.gif" alt="college gif" id="college"></div>
+      
+      <div class="col-md-4" id="chooseMajor">
+        <h2><strong>Choose a Major</strong></h2>
+          <p>Choose a button below, and then click on any gif to start/stop animation.</p>
+          <div id="top"></div>
+            
+          <h2><strong>Submit Your Own Major</strong></h2>
+              <div id="user-input">
+              <form id="gif-form">
+                <input type="text" id="major-input">
+                <!-- Button triggers new movie to be added -->
+                <input id="add-major" type="submit" value="Add to List">
+              </form>
+            </div>
+        </div>
+      </div>
+    
     </div>
+  </div>
+
 
 <script type="text/javascript" src="assets/javascript/giphySearch1.js"></script>
 </body>
